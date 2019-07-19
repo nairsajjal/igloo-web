@@ -53,7 +53,15 @@
     display: flex;
     align-items: center;
     min-height: 800px;
-
+    .mask-image{
+      position: absolute;
+      left: 355px;
+      top: 167px;
+    }
+    .mask-image.img-right{
+      right: 304px;
+      left: unset;
+    }
     .half-image {
       position: absolute;
       left: 0;

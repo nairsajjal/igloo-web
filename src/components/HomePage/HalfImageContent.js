@@ -6,6 +6,8 @@ const HalfImageContent = ({ halfImageContent }) => {
     imgRight,
     imgUrl,
     imgAlt,
+    maskImgUrl,
+    maskImgAlt,
     title,
     content1,
     content2,
@@ -15,6 +17,8 @@ const HalfImageContent = ({ halfImageContent }) => {
   return (
     <div className="half-image-wrapper">
       <img className={`half-image ${ imgClass }`} src={imgUrl} alt={imgAlt} />
+
+      <img className={`mask-image ${ imgClass }`}src={maskImgUrl} alt={maskImgAlt} />
       <div className={`half-image-section ${ imgClass } container`} >
         <div className="content">
           {title && <h3>{title}</h3>}
