@@ -1,0 +1,36 @@
+.site-footer {
+  background-color: $primary-bg;
+  color: $light-bg;
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .site-logo,
+  .footer-menu {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 70px;
+    .site-brand {
+      margin-bottom: 10px;
+    }
+  }
+  .footer-menu {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: right;
+    a {
+      padding: 7px;
+      margin-left: 10px;
+    }
+    .footer-top-menu {
+      a {
+        margin-left: 20px;
+      }
+    }
+  }
+}

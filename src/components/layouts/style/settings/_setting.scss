@@ -1,0 +1,48 @@
+$Primary-font: HelveticaNeueRegular !default;
+$md-font-family: "#{$Primary-font}", sans-serif !default;
+$extend-html-tags: false !default;
+$md-typography-include-text-container: false !default;
+$md-typography-include-utilities: false !default;
+$md-colors-warn-md: false;
+$font-heading: HelveticaNeueMedium !default;
+
+$primary-bg: #2a313c;
+$dark-bg: #232831;
+$site-primary-color: #1ae3c1;
+$primary-hover: #1cbea5;
+$font-dark: #47505f;
+
+$md-primary-color: $primary-bg;
+// $md-secondary-color: $purple-500;
+// $md-tertiary-color: $md-grey-300;
+$primary-color: $primary-bg;
+
+$grey100: #e5e5e5;
+$grey200: rgba(255, 255, 255, 0.5);
+
+$light-bg: #ffffff;
+$dark: #000;
+
+// font weights
+$thin: 300;
+$regular: 400;
+$semibold: 500;
+$bold: 700;
+
+$base-font-size: 16px;
+$font-md: 15px;
+$font-sm: 14px;
+$font-xs: 12px;
+$md-display-0-font-size: 24px !default;
+$md-display-1-font-size: 34px !default;
+$md-display-2-font-size: 45px !default;
+$md-display-3-font-size: 56px !default;
+$md-display-4-font-size: 112px !default;
+$h1: 86px !default;
+$h2: 56px !default;
+$h3: 36px !default;
+$h4: 24px !default;
+$h5: $font-md !default;
+$h6: $font-sm !default;
+
+@include react-md-typography;

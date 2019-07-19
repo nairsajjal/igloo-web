@@ -1,0 +1,124 @@
+.homepage-section {
+  .badge {
+    text-transform: uppercase;
+  }
+  // hero section
+  .hero-section-wrapper {
+    position: relative;
+    .hero-section {
+      background: $primary-bg;
+      color: $light-bg;
+      padding: 150px 0;
+      background-image: url("/images/home/Rectangle.png");
+      background-repeat: no-repeat;
+      h2 {
+        color: inherit;
+      }
+      .banner-content {
+        max-width: 750px;
+        position: relative;
+        .content {
+          max-width: 60%;
+          margin-top: 30px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .banner-right-img {
+      background-image: url("/images/home/Light.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  // customers section
+  
+  .customers-section-wrapper {
+    background-color: $grey100;
+    padding-top: 22px;
+    padding-bottom: 15px;
+  }
+  .customers-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // half image section
+  .half-image-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+
+    .half-image {
+      position: absolute;
+      left: 0;
+      width: 48vw;
+    }
+    .half-image.img-right {
+      right: 0;
+      left: unset;
+    }
+    .half-image-section {
+      .content {
+        max-width: 445px;
+        width: 50%;
+        float: right;
+        margin-right: 100px;
+      }
+    }
+    .img-right.half-image-section {
+      .content {
+        float: left;
+        margin-right: 100px;
+      }
+    }
+    // app pay icons
+    .pay-app-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+    }
+  }
+  // real time ledger
+  .real-time-ledger-wrapper {
+    background-image: url("/images/home/cover-scale.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 824px;
+
+    .real-time-ledger {
+      .real-time-content {
+        padding-top: 100px;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: -30px;
+        h3 {
+          white-space: pre-wrap;
+        }
+      }
+    }
+  }
+  // slider section
+  .gallerCarousel {
+    .slick-slide {
+      padding: 30px 10px;
+    }
+    .item {
+      @include box-shadow(0px 10px 20px rgba($dark, 0.11));
+      @include border-radius(3px);
+      overflow: hidden;
+      outline: 0;
+      img {
+        width: 100%;
+        outline: 0;
+      }
+    }
+  }
+}

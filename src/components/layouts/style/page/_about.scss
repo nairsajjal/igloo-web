@@ -1,0 +1,76 @@
+.aboutpage-section {
+  // hero section
+  .hero-section-wrapper {
+    position: relative;
+    .hero-section {
+      background: $primary-bg;
+      color: $light-bg;
+      padding: 100px 0;
+
+      background-repeat: no-repeat;
+      h2 {
+        color: inherit;
+        text-align: center;
+      }
+    }
+  }
+  //ourstory-section
+  .ourstory-section-wrapper {
+    background-color: $grey100;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .ourstory-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .outstory-title {
+    position: relative;
+    top: 100px;
+  }
+
+  .ourstory-content-section {
+    max-width: 810px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  //meeteam-section
+  .meetteam-section-wrapper {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .meetteam-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .meetteam-content-section {
+    padding-left: 100px;
+    max-width: 630px;
+  }
+  //teamlist-section
+  .teamlist-wrapper {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    hr {
+      -webkit-box-shadow: 0 0 1px 0 #666;
+      -moz-box-shadow: 0 0 1px 0 #666;
+      box-shadow: 0 0 1px 0 #666;
+    }
+  }
+  .teamlist-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    a {
+      color: black;
+    }
+  }
+  //member-section
+  .member-container {
+    flex-basis: calc(25%);
+    text-align: center;
+    padding: 25px;
+  }
+}

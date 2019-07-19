@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: $base-font-size;
+  font-family: $Primary-font !important;
+  color: $primary-color;
+  background: $light-bg;
+  line-height: 2 !important;
+  white-space: pre-line;
+  // font-weight: $md-font-semibold;
+  overflow-x: hidden;
+  @include devicepoint(767px) {
+    font-size: $font-sm;
+  }
+  a {
+    color: $light-bg;
+    text-decoration: none;
+  }
+  .btn {
+    @include border-radius(3px);
+    @include transition(all 0.2s ease);
+    text-transform: unset;
+    height: unset;
+    padding: 12px 20px;
+    a {
+      padding: 10px 15px;
+    }
+  }
+  .btn.primary {
+    background-color: $site-primary-color;
+    a {
+      color: $primary-bg;
+      &:hover {
+        color: $primary-bg;
+      }
+    }
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+  .btn.secondary {
+    border: 1px solid $light-bg;
+    a {
+      color: $light-bg;
+      &:hover {
+        color: $primary-bg;
+      }
+    }
+    &:hover {
+      background-color: $light-bg;
+    }
+  }
+  .dark-bg {
+    color: $light-bg !important;
+    background-color: $dark-bg !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: inherit;
+    }
+  }
+}
+.container {
+  max-width: 1540px;
+  @include devicepoint("desktop") {
+    max-width: 950px;
+  }
+  @include devicepoint("tablet") {
+    max-width: 750px;
+  }
+  @include devicepoint("767px") {
+    max-width: 550px;
+  }
+  padding: 0 15px;
+  width: 100%;
+  margin: auto;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+// typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: $font-heading !important;
+}
+p,
+input,
+textarea,
+html {
+  font-family: $Primary-font !important;
+}
+input,
+textarea {
+  font-size: inherit;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+  color: $font-dark;
+}
+h1,
+.h1 {
+  font-size: $h1;
+  line-height: 1;
+  letter-spacing: -3px;
+  @include devicepoint("desktop") {
+    font-size: $h1 - 10px;
+  }
+  @include devicepoint("tablet") {
+    font-size: $h1 - 20px;
+  }
+  @include devicepoint("767px") {
+    font-size: $h3;
+  }
+}
+h2,
+.h2 {
+  font-size: $h2;
+  letter-spacing: -1.95px;
+  @include devicepoint("desktop") {
+    font-size: $h2 - 10px;
+  }
+  @include devicepoint("tablet") {
+    font-size: $h2 - 20px;
+  }
+  @include devicepoint("767px") {
+    font-size: $h2 - 28px;
+  }
+}
+h3,
+.h3 {
+  font-size: $h3;
+  letter-spacing: -1.26px;
+  @include devicepoint("desktop") {
+    font-size: 28px !important;
+  }
+}
+h4,
+.h4 {
+  font-size: $h4 !important;
+  letter-spacing: -0.56px;
+  @include devicepoint("desktop") {
+    font-size: $h4 - 4px !important;
+  }
+}
+h5,
+.h5 {
+  font-size: $h5;
+}
+h6,
+.h6 {
+  font-size: $h6 !important;
+}
+.text-light {
+  color: $grey200 !important;
+  a {
+    color: $grey200 !important;
+  }
+}
+.md-body-1 {
+  font-size: $base-font-size;
+  @include devicepoint("767px") {
+    font-size: 14px;
+  }
+}
+p {
+  color: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.section {
+  padding: 70px 0;
+  @include devicepoint("767px") {
+    padding: 40px 0;
+  }
+}
+.pageTitle {
+  padding: 250px 0 0px;
+  white-space: normal;
+  @include devicepoint("tablet") {
+    padding-top: 180px;
+    h2 {
+      font-size: $h3 !important;
+    }
+  }
+  @include devicepoint("767px") {
+    padding-top: 80px;
+  }
+  @include devicepoint("phone") {
+    br {
+      display: none;
+    }
+  }
+  .container {
+    max-width: 800px;
+  }
+}
+// grids
+// 50-50 grid
+.grid2 {
+  display: flex;
+  .col {
+    flex-basis: 50%;
+  }
+}

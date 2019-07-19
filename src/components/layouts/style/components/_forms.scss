@@ -1,0 +1,88 @@
+#subscriptionForm {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .form-row {
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    padding: 10px;
+    margin-right: 10px;
+    @include border-radius(3px);
+    border: none;
+    min-width: 333px;
+  }
+}
+.contactform {
+  .formgroup {
+    position: relative;
+    > span {
+      position: absolute;
+      right: 8px;
+      bottom: 3px;
+      font-size: 12px;
+    }
+  }
+  .success {
+    color: green;
+  }
+  .error {
+    color: red;
+  }
+  .btn-fullwidth{
+    width:100%;
+  }
+  .md-cell{
+    border: 1px solid transparent;
+    background: $light-bg;
+    font-size: 32px;
+    border-radius: 4px;
+    margin:0;
+    padding: 0px 20px;
+    
+    width:100%;
+  }
+  .md-form-control {
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    .md-text-field-multiline-container {
+      margin: 0;
+      background: $grey100;
+      height: auto !important;
+    }
+    textarea {
+      height: 270px !important;
+      padding: 20px 20px;
+    }
+    input {
+      height: 59px;
+      padding: 0px 20px;
+    }
+    input,
+    textarea {
+      background: $light-bg;
+      margin: 0;
+      font-size: 16px;
+    }
+    hr {
+      margin: 0;
+    }
+  }
+
+  .md-select-field--btn .md-icon-text {
+       position: relative;
+       left: -26px;
+       font-size: 16px;
+      
+    }
+     #select-field-menu {
+      margin-bottom: 10px;
+      
+      }
+      .md-select-field--btn.md-select-field--btn {
+       
+        height: 59px;
+      }
+}

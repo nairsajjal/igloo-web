@@ -1,0 +1,33 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~react-md/src/scss/react-md";
+
+// SETTINGS
+@import "settings/fonts";
+@import "settings/setting";
+@import "settings/animate";
+
+// MIXIN
+@import "mixins/animation";
+@import "mixins/transform";
+@import "mixins/keyframes";
+@import "mixins/grid-mixin";
+@import "mixins/drop-shadow";
+@import "mixins/border-radius-mixin";
+@import "mixins/box-shadow";
+@import "mixins/transistion";
+@import "mixins/linear-gradient";
+@import "mixins/placeholder";
+@import "mixins/mediaquery";
+@import "mixins/target-IE";
+
+// COMPONENTS
+@import "components/header";
+@import "components/footer";
+@import "components/forms";
+
+// PAGES
+@import "page/layout";
+@import "page/home";
+@import "page/about";
+@include react-md-everything;
