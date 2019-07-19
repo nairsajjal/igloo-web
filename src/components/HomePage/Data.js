@@ -43,7 +43,7 @@ export const halfImageContentData = [
   },
   {
     imgRight: true,
-    imgUrl: `/images/home/halfWidthSec/one-touch-execution.svg`,
+    imgUrl: `/images/home/halfWidthSec/one-touch-execution-new.svg`,
     imgAlt: `One Touch Execution`,
     title: `One Touch Execution`,
     content1: `All instructions are issued and received digitally. In removing the wet signature and docusign a Party can now execute their contract and instructions from their desktop or mobile device.`,
@@ -51,7 +51,7 @@ export const halfImageContentData = [
   },
   {
     imgRight: false,
-    imgUrl: `/images/home/halfWidthSec/triple-entry-contracting.svg`,
+    imgUrl: `/images/home/halfWidthSec/triple-entry-contracting-new.svg`,
     imgAlt: `Triple Entry Contracting`,
     title: `Triple Entry Contracting`,
     content1: `Igloo records all events on blockchain as an immutable data set. No longer do parties need to take a pile of paper work to mediation, Igloo provides a one stop shop for mediation and dispute resolution. Furthermore, our Triple Entry Contracting is visible to all parties, everyone will know the status of their contract (residential tenancy agreement). Transparent communication in real time.`,
